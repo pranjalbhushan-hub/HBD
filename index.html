@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Love ❤️</title>
+
+<style>
+body{
+background:#ffeef5;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+width:350px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px 25px;
+background:#ff4f87;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+#content{
+display:none;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>❤️ Just For You ❤️</h2>
+
+<p>Enter our secret password</p>
+
+<input type="password" id="password">
+
+<br>
+
+<button onclick="unlock()">Unlock</button>
+
+<div id="content">
+
+<h3>I love you ❤️</h3>
+
+<audio controls>
+<source src="message(1).mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+</div>
+
+<script>
+
+const PASSWORD = "15082025";
+
+function unlock(){
+
+if(document.getElementById("password").value===PASSWORD){
+
+document.getElementById("content").style.display="block";
+
+}else{
+
+alert("Wrong password ❤️");
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
